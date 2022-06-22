@@ -1,4 +1,5 @@
 import React from "react"
+import pinImg from "../images/Fill 219.png"
 
 export default function Card(props) {
     let date
@@ -15,7 +16,7 @@ export default function Card(props) {
                 <img src={props.imageUrl} alt={props.imageUrl} className="card--img" />
                 <span className="card--content">
                     <span className="card--country">
-                        <img src="../images/Fill 219.png" alt="pin icon" className="card--pin"/>
+                        <img src={pinImg} alt="pin icon" className="card--pin"/>
                         <span className="card--country-name">{props.location.toUpperCase()}</span>
                         <a href={props.googleMapsUrl} target="_blank" rel="noreferrer">
                             View on Google Maps
